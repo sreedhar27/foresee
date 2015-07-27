@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-cloak ng-app="foreseeDemo">
+<head>
+<title>Admin Console</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css"	href="assets/styles/theme/theam_default_main.css" />
+<link rel="stylesheet" type="text/css"	ng-href="assets/styles/theme/{{colorScheme}}_color.css" />
+
+<!-- jquery-->
+<script type="text/javascript" src="assets/scripts/lib/jquery-2.1.4.js"></script>
+
+<!-- angular-->
+<script type="text/javascript" src="assets/scripts/lib/angular-1.4.3/angular.js"></script>
+<script type="text/javascript" src="assets/scripts/lib/angular-1.4.3/angular-resource.js"></script>
+<script type="text/javascript" src="assets/scripts/lib/angular-1.4.3/angular-route.js"></script>
+<script type="text/javascript" src="assets/scripts/lib/angular-1.4.3/angular-animate.js"></script>
+
+<!-- Overlayes, hide, display dependency-->
+<script type="text/javascript" src="assets/scripts/lib/ui-bootstrap-tpls-0.13.1.js"></script>
+
+<!-- d3 js-->
+<script type="text/javascript" src="assets/scripts/lib/d3.v3.js"></script>
+<script type="text/javascript" src="assets/scripts/lib/d3.tip.js"></script>
+
+<!-- foresee module-->
+<script type="text/javascript" src="assets/scripts/lib/foresee/foresee_module.js"></script>
+<script type="text/javascript" src="assets/scripts/lib/foresee/chart_directive.js"></script>
+
+<!-- demo glue code-->
+<script type="text/javascript" src="assets/scripts/core/demo/visualization_controller.js"></script>
+<script type="text/javascript" src="assets/scripts/core/demo/footer_controller.js"></script>
+<script type="text/javascript" src="assets/scripts/core/demo/common_actions.js"></script>
+
+</head>
+<body>
+	<div  class="pageBase">
+	<div class="clear10"></div>
+	<div class="clear10" style="test-align:left"></div>
+		<div
+		    	id="chartContainer"
+		    	class="clearBoth"
+		    	chart
+		    	chart-height="300"
+		    	chart-width="900"
+		    	chart-padding="30"
+		    	chart-data="chartData"
+		    	chart-x="x1"
+		    	chart-y="y1"
+		    	chart-labels="y1"
+		    	chart-xtitle="Time(days)"
+		    	chart-ytitle="Quantity(tons)"
+		    	chart-title="Supply/Demand"
+		    	chart-type="bar"
+		    	chart-class="chartCanvas flat"
+		    	chart-animate="true"
+		    	chart-data-labels="true"
+		    	chart-effect="3D"
+    	 ng-controller="foreseeDemoController"></div>
+    	 <div ng-app class="footer" ng-controller="footerController">&copy; Sreedhar Potturi {{year}} Angular version {{angVersion.codeName}}:{{angVersion.full}}</div>
+	</div>
+</body>
+</html>
