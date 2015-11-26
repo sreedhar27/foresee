@@ -1,0 +1,9 @@
+{	"columnDefs" : [
+			{"field" : "id", "displayName" : "Seq. No."},
+			{"field" : "name", "displayName" : "Name", "cellTemplate" : "<a href=\"\" ng-href=\"#/api/action/edit\" ng-click=\"$rootScope.poiId='{{row.entity['id']}}'\">{{row.getProperty(col.field)}}</a>"},
+			{"field" : "previousStep", "displayName" : "Previous Step"},
+			{"field" : "nextStep", "displayName" : "Next Step"},
+			{"field" : "poiName", "displayName" : "POI ID"}
+			],
+	"sortInfo" : {"fields" : [ "id" ],"directions" : [ "asc" ]}
+}

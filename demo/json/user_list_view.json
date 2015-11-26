@@ -1,0 +1,10 @@
+{	"columnDefs" : [
+			{"field" : "id", "displayName" : "ID"},
+			{"field" : "appName", "displayName" : "Application"},
+			{"field" : "firstName", "displayName" : "First Name"},
+			{"field" : "lastName", "displayName" : "Last Name"},
+			{"field" : "admin", "displayName" : "Admin"},
+			{"field" : "userName", "displayName" : "User Name", "cellTemplate" : "<a href=\"\" ng-href=\"#/api/user/edit\" ng-click=\"$rootScope.userId='{{row.entity['id']}}'\">{{row.getProperty(col.field)}}</a>"}
+			],
+	"sortInfo" : {"fields" : [ "id" ],"directions" : [ "asc" ]}
+}

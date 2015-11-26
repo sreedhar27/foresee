@@ -1,0 +1,13 @@
+.addItemsContainerTitle{float:left;font-size:medium;font-weight:bold;height:28px;background-color:#C7D561;margin-top:10px;width:95%;}
+.addItemsContainer{margin-top:25px;margin-left:30px;width:80%;display:inline-block;}
+.addItemsLeftDiv{width:35%;height:400px;float:left;border:1px solid #707070;}
+.addItemsLeftDivTitle{float:left;font-size:medium;font-weight:bold;height:28px;width:100%;background-color:#C7D561;}
+.addItemsLeftDivContent{overflow:auto;height:372px;float:left;font-size:medium;width:100%;}
+.addItemsLeftDivitr{float:left;font-size:medium;width:100%;height:28px;}
+.addItemsCenterDiv{width:20%;float:left;margin-top:18%;}
+.addItemsCenterDivremovebtn{width:50%;text-align:left;margin-left:25%;}
+.addItemsCenterDivaddbtn{width:50%;margin-top:10px;text-align:right;margin-left:25%;}
+.addItemsRightDiv{width:35%;height:400px;float:left;border: 1px solid #707070;}
+.addItemsRightDivTitle{float:left;font-size:medium;font-weight:bold;height:28px;width:100%;background-color:#C7D561;}
+.addItemsRightDivContent{overflow:auto;height:372px;float:left;font-size:medium;width:100%;}
+.addItemsRightDivitr{float: left;font-size: medium;width:100%;height:28px;}

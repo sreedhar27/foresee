@@ -1,0 +1,9 @@
+{	"columnDefs" : [
+			{"field" : "id", "displayName" : "ID"},
+			{"field" : "privilegeName", "displayName" : "Privilege", "cellTemplate" : "<a href=\"\" ng-href=\"#/api/privilege/edit\" ng-click=\"$rootScope.privilegeId='{{row.entity['id']}}'\">{{row.getProperty(col.field)}}</a>"},
+			{"field" : "description", "displayName" : "Description"},
+			{ "displayName" : "Action", "cellTemplate" : "<a href=\"\" ng-href=\"#/api/privilege/edit\" ng-click=\"$rootScope.privilegeId='{{row.entity['id']}}'\"><img class=\"cToolBarIconInline\" align=\"bottom\" ng-src=\"assets/images/icons/edit.png\"/></a><a href=\"\" ng-controller=\"privilegeDeleteCtrl\" ng-click=\"$rootScope.privilege.id='{{row.entity['id']}}';$rootScope.privilege.privilegeName='{{row.entity['privilegeName']}}';openDeletePrivilegeConfirmation();\"><img class=\"cToolBarIconInline\" align=\"bottom\" ng-src=\"assets/images/icons/delete.png\"/></a>"}
+			],
+	"sortInfo" : {"fields" : [ "id" ],"directions" : [ "asc" ]},
+	"crudToolBarInfo" : [  { "hrefValue" : "#api/privilege/edit", "clickValue" : "$rootScope.privilegeId=0", "buttonValue" : "Add Privilege", "iconValue" : "" }  ]
+}

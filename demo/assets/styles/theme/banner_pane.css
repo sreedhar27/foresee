@@ -1,0 +1,26 @@
+.logo {
+    position:absolute;
+    left:5px;
+    height: 35px;
+    width: 90px;
+}
+
+.appName {
+    border:hidden;
+    position:absolute;
+    right:10px;
+    top:10px;
+    font-size: 30px;
+}
+
+.topMenu {
+    padding:0px;
+    border:hidden;
+    position:absolute;
+    right:250px;
+    bottom:0px;
+    height:2em;
+    vertical-align: middle;
+    font-size: small;
+    /*overflow:hidden;*/
+}

@@ -1,0 +1,9 @@
+{	"columnDefs" : [
+			{"field" : "id", "displayName" : "ID"},
+			{"field" : "role", "displayName" : "Role", "cellTemplate" : "<a href=\"\" ng-href=\"#/api/role/edit\" ng-click=\"$rootScope.roleId='{{row.entity['id']}}'\">{{row.getProperty(col.field)}}</a>"},
+			{"field" : "description", "displayName" : "Description"},
+			{ "displayName" : "Action","cellTemplate" : "<a href=\"\" ng-href=\"#/api/role/edit\" ng-click=\"$rootScope.roleId='{{row.entity['id']}}'\"><img class=\"cToolBarIconInline\" align=\"bottom\" ng-src=\"assets/images/icons/edit.png\"/></a><a href=\"\" ng-controller=\"roleDeleteCtrl\" ng-click=\"$rootScope.role.id='{{row.entity['id']}}';$rootScope.role.role='{{row.entity['role']}}';openDeleteRoleConfirmation();\"><img class=\"cToolBarIconInline\" align=\"bottom\" ng-src=\"assets/images/icons/delete.png\"/></a>"}
+			],
+	"sortInfo" : {"fields" : [ "id" ],"directions" : [ "asc" ]},
+	"crudToolBarInfo" : [  { "hrefValue" : "#api/role/edit", "clickValue" : "$rootScope.roleId=0", "buttonValue" : "Add Role", "iconValue" : "" }  ]
+}

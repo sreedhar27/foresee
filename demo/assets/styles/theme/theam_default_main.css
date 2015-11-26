@@ -1,0 +1,166 @@
+@import url("banner_pane.css") ;
+@import url("menu_pane.css") ;
+@import url("content_pane.css") ;
+@import url("accordion.css") ;
+@import url("ng_grid.css") ;
+@import url("form.css") ;
+@import url("input.css") ;
+@import url("button.css") ;
+@import url("toastr.css") ;
+@import url("crud_toolbar.css") ;
+@import url("modal.css") ;
+@import url("dropdown.css") ;
+@import url("jquery.qtip.css") ;
+@import url("foresee.css") ;
+@import url("collapse.css") ;
+@import url("edit_screen.css") ;
+
+.pageBase {
+    position:absolute;
+    top:0px;
+    left:0px;
+    min-width:500px;
+    min-height:520px;
+    height:100%;
+    width:100%;
+}
+
+.header {
+    padding:3px;
+    left:0px;
+    position:relative;
+    top:0px;
+    border: hidden;
+    height: 35px;
+    max-width:100%;
+    width:100%;
+}
+
+.leftNav {
+    border:hidden;
+    left:2px;
+    position: relative;
+    padding : 0px;
+    float: left;
+    width:   15%;
+    height:85%;
+}
+
+.content {
+    position:relative;
+    border:hidden;
+    left:14px;
+    float:left;
+    width:84%;
+    height:85%;
+}
+
+.notification {
+    position:relative;
+    float:left;
+    width:15%;
+    left:24px;
+    height:85%;
+}
+
+.bottomSpacer {
+    height:5%;
+    min-height:10px;
+}
+
+.dialog {
+    width: inherit;
+    height: inherit;
+    border: dashed;
+}
+
+.footer {
+    position:fixed;
+    float:left;
+    border: hidden;
+    width:99%;
+    height:1em;
+    bottom:0px;
+    left:4px;    
+    font-size:smaller;
+    clear:both;
+}
+
+.appNameVersion{
+	text-align: center;
+	font-size: x-small;
+	float: right;
+}
+
+.loginDialog {
+  position:absolute;
+  top:50%;
+  width: 300px ;
+  margin-left: 40% ;
+  margin-right: auto ;  
+}
+
+.iconGlobal{
+	width:32px;
+	height: 26px;
+	vertical-align: middle;
+}
+
+
+.noScroll {
+    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+.verticalScroll{
+	overflow-x: auto;
+	
+}
+
+.horizontalScroll{
+	overflow-y: auto;
+	
+}
+
+.boxShadow {
+    box-shadow:3px 3px 5px 2px #a9a7a7;
+}
+
+.thinBorder {
+
+}
+
+.clear5 {
+    padding:5px;
+}
+
+.clear10 {
+    padding:10px;
+}
+
+.clear20 {
+    padding:20px;
+}
+
+.clear30 {
+    padding:30px;
+}
+
+.minHeight600 {
+    min-height:600px;
+}
+
+.minHeight700 {
+    min-height:700px;
+}
+
+.clearBoth {
+    clear:both;
+}
+
+.chartContainer{
+    position:absolute;
+    top:50px;
+    left:50px;
+}

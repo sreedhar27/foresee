@@ -1,0 +1,195 @@
+#chartContainer{
+    margin : 90px;
+    border:solid 0px;
+    overflow:hidden;
+    float:left;
+    overflow: visible;
+}
+
+.chartCanvas{
+	padding: 30px;
+}
+
+.tiltRight{
+    transform: matrix(1, -0.2, 0, 1, 0, 0); 
+    -webkit-transform: matrix(1, -0.2, 0, 1, 0, 0); 
+    -moz-transform: matrix(1, -0.2, 0, 1, 0, 0); 
+    -o-transform: matrix(1, -0.2, 0, 1, 0, 0);
+}
+
+.tiltLeft{
+    transform: matrix(1, 0.2, 0, 1, 0, 0); 
+    -webkit-transform: matrix(1, 0.2, 0, 1, 0, 0); 
+    -moz-transform: matrix(1, 0.2, 0, 1, 0, 0); 
+    -o-transform: matrix(1, 0.2, 0, 1, 0, 0);
+}
+
+.bar{
+    fill : #c7a061;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.barShadow{
+    fill : steelblue;
+}
+
+.circle{
+    stroke-width:2;
+    stroke: deepskyblue;
+    fill-opacity:0.0;
+}
+
+.line {
+  fill: none;
+  stroke: #FF11BB;
+  stroke-width: 3px;
+}
+
+.text{
+    font-family:sans-serif;
+    font-size:9px;
+    font-weight:bold;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.5;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+.chartPicker{
+	height:32px;
+	width:32px;
+	margin:10px;
+}
+
+.chartConfig{
+	padding:6px;
+	border:solid #c7d561 1px;
+	width:400px;
+	background-color:#fff;
+	background-color:rgba(255,255,255,0.8);
+}
+
+.chartConfigItem{
+	padding:5px;
+	height:20px;
+	width:180px;
+	float:left;
+}
+
+.chartConfigTextNumber{
+	width : 40px;
+}
+
+.chartConfigTextString{
+	width : 120px;
+}
+
+.dataLabel{
+    font-family:sans-serif;
+    font-size:9px;
+    font-weight:bold;
+}
+
+.axisLabel{
+	font-family: sans-serif;
+	font-size: x-small;
+	font-weight: bold;
+}
+
+.chartTitle{
+	font-family: sans-serif;
+	font-size: large;
+	font-weight: bold;
+}
+
+.circle{
+    stroke-width: 2;
+    stroke: #F51032;
+    fill: #F51032;
+    fill-opacity: 1;
+}
+
+.area{
+    fill : #c7a061;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node--root {
+  stroke: #c7a061;
+  stroke-width: 2px;
+}
+
+.node--leaf {
+  fill: #F51032;
+}
+
+.label {
+  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
